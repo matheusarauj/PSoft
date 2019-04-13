@@ -23,11 +23,11 @@
             var peso = parseFloat(document.getElementById('peso').value);
             var altura = parseFloat(document.getElementById('altura').value);
 
-            if(altura < 0 || altura == null){
+            if(altura < 0 || altura == null || isNaN(altura)){
                 alert('Digite uma altura válida.');
                 return false;
             }
-            if(peso < 0 || peso == null){
+            if(peso < 0 || peso == null || isNaN(peso)){
                 alert('Digite um peso válido.');
                 return false;
             }
