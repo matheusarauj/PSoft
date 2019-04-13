@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/*Limpar formatações padrão*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 17px;
+	background: url('IMAGENS/grey-washed-wall.png'),
+				url('IMAGENS/ruido.png'),
+				linear-gradient(50deg,#000,#9855f5);
+	background-attachment: fixed;
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+}
+
+#navegacao {
+	background: #fff;
+	border-bottom: 1px solid #535353;
+	height: 45px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+.area {
+	width: 1300px;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 1400px) {
+	.area {
+		width: 800px;
+		margin: 0 auto;
+	}
+}
+
+.capa {
+	display: table;
+	width: 100%;
+}
+
+.texto-capa {
+	text-align: center;
+	color: white;
+	display: table-cell;
+    vertical-align: middle;
+}
+
+.campo-imc{
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.campo{
+    margin-top: 10px;
+    width: 270px;
+    height: 27px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 1px solid black;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.resposta{
+    margin-top: 10px;
+    width: 570px;
+    height: 37px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
+    margin-bottom: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 1px;
+}
+
+.button{
+    margin-top: 10px;
+    width: 100px;
+    height: 35px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 15px;
+    outline: none;
+    background: #c5bfbf;
+    letter-spacing: 1px;
+}
+
+.letra-maior{
+    color: #f8f8ff;
+    font-size: 90px;
+    text-shadow: 2px 2px 2px #000;  
+    letter-spacing: -5px;
+}
+
+.subtitulo{
+    color: #f8f8ff;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 1px #000;
+    
+}
+
+#area-principal {
+	width: 720px;
+	margin: 155px auto 10px auto;
+}
+
+#logo {
+	float: left;
+    padding-top: 3px;
+}
+
+#menu {
+	float: right;
+	padding: 12px;
+	margin-right: -12px;
+}
+
+#descricao {
+    margin-top: 50px;
+    width: 720px;
+    height: 580px;
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#margem-descricao{
+    margin-top: 12px;
+    margin-left: 18px;
+    margin-bottom: 12px;
+    margin-right: 18px;
+    text-align: justify;
+}
+
+#imc{
+    margin-top: 50px;
+    width: 720px;
+    height: 580px;
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#logo-imc{
+    text-align: center;
+	color: white;
+	display: table-cell;
+    vertical-align: middle;
+}
+
+
+h2 {
+	color: #9855f5;
+}
+
+/****************************************************
+***********************Formatação do menu************/
+a {
+	text-decoration: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    border: 2px solid #9855f5;
+    border-radius: 20px;
+}
+/*Links não visitados*/
+a:link {
+	color: #9855f5;
+}
+
+/*Links visitados*/
+a:visited {
+    color: #9855f5;
+}
+
+/*Links hover*/
+a:hover {
+	color: #fff;
+	background: #9855f5;
+}
+
+/*Links active*/
+a:active {
+	color: #9855f5;
+}
+
+
+/*Classes*/
+.purple {
+	color: #9855f5;
+}
+
+.cinza{
+    color: #c5bfbf;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 30px;
+}
+

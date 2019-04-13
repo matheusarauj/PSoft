@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Grab The Dev</title>
+
+    <!-- Bootstrap -->
+
+    <link href="estilo.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+        function calcular(){
+            var peso = parseFloat(document.getElementById('peso').value);
+            var altura = parseFloat(document.getElementById('altura').value);
+
+            if(altura < 0 || altura == null){
+                alert('Digite uma altura válida.');
+                return false;
+            }
+            if(peso < 0 || peso == null){
+                alert('Digite um peso válido.');
+                return false;
+            }
+
+            var resultado = peso/(altura*altura)
+            var resposta = null;
+
+            if(resultado < 17){
+                resposta = "IMC: " + resultado.toFixed(2) + ". Você está muito desnutrido, irmão.";
+            }
+            else if(resultado >= 17 && resultado < 18.5){
+                resposta = "IMC: " +  resultado.toFixed(2) + ". Você está magrinho, consagrado.";
+            }
+            else if(resultado >= 18.5 && resultado < 25){
+                resposta = "IMC: " +  resultado.toFixed(2) + ". Você está no grau, excelência.";
+            }
+            else if(resultado >= 25 && resultado < 30){
+                resposta = "IMC: " +  resultado.toFixed(2) + ". Você está gordinho, parceiro.";
+            }
+            else if(resultado >= 30 && resultado < 35){
+                resposta = "IMC: " +  resultado.toFixed(2) + ". Você está um melãozinho, moral.";
+            }
+            else{
+                resposta = "IMC: " +  resultado.toFixed(2) + ". Doido, tu vai morrer!";
+            }
+
+            document.getElementById('resultado').value = resposta;
+
+
+        }
+    </script>
+  </head>
+
+  <body>
+
+    <header>
+      <div id="navegacao">
+        <div class="area">
+          <h1 id="logo"><span class="purple">Grab</span>owski</h1>
+          <div id="menu">
+            <a href="index.html">Home</a>
+            <a href="imc.html">IMC</a>
+            <a href="outrasCoisas.html">Outras Coisas</a>
+          </div>
+        </div>
+    </header>
+
+    <nav id="area-principal">
+        <section class="capa">
+            <div class="texto-capa">
+                <h1 class="letra-maior">Calcule o seu IMC</h1>
+                <p class="subtitulo">~talvez você não esteja saudável~</p>
+            </div>
+        </section>
+
+        <section class="campo-imc">
+            <div>
+                <h2 class="cinza">Digite a sua altura:</h3>
+                <input id="altura" type="text" class="campo">
+            </div>
+            <div>
+                <h2 class="cinza">Digite o seu peso:</h3>
+                <input id="peso" type="text" class="campo">
+            </div>
+
+            <div>
+                <button type="button" class="button" onclick="calcular()" >Calcular</button>
+            </div>
+
+            <div>
+                <br/>
+                <input type="text" class="resposta" id="resultado" readonly>
+            </div>
+        </section>
+    </nav>
+  </body>
+</html>
