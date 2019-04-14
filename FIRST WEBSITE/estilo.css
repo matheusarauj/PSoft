@@ -55,6 +55,12 @@ body {
     text-align: center;
 }
 
+.campo-tarefa{
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
 .campo{
     margin-top: 10px;
     width: 270px;
@@ -67,6 +73,22 @@ body {
     border: 1px solid black;
     outline: none;
     margin-bottom: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.campo-tarefa-digite{
+    margin-top: 10px;
+    width: 350px;
+    height: 27px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 1px solid black;
+    outline: none;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 2px black;
 }
 
 .resposta{
@@ -87,7 +109,7 @@ body {
 }
 
 .button{
-    margin-top: 10px;
+    margin-top: 20px;
     width: 100px;
     height: 35px;
     font-size: 18px;
@@ -95,19 +117,33 @@ body {
     font-weight: bold;
     border-radius: 15px;
     outline: none;
-    background: #c5bfbf;
+    background: #fff;
+    border: 2px solid #067ee0;
     letter-spacing: 1px;
+    transition: 0.2s;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.calcula{
+    margin-top: 10px;
 }
 
 .letra-maior{
-    color: #f8f8ff;
+    color: #fff;
     font-size: 90px;
-    text-shadow: 2px 2px 2px #000;  
+    text-shadow: 2px 2px 1px #000;  
     letter-spacing: -5px;
 }
 
+.letra-media{
+    color: #fff;
+    font-size: 60px;
+    text-shadow: 2px 2px 1px #000;  
+    letter-spacing: -2px;
+}
+
 .subtitulo{
-    color: #f8f8ff;
+    color: #fff;
     font-size: 25px;
     letter-spacing: 5px;
     text-shadow: 1px 1px 1px #000;
@@ -135,7 +171,8 @@ body {
     width: 720px;
     height: 580px;
     background: #fff;
-    border: 2px solid black;
+    box-shadow: 4px 4px 2px #000;
+    border: 1px solid black;
     border-radius: 20px;
 }
 
@@ -177,6 +214,7 @@ a {
     letter-spacing: -1px;
     border: 2px solid #067ee0;
     border-radius: 20px;
+    box-shadow: 2px 2px 1px #000;
 }
 /*Links não visitados*/
 a:link {
@@ -207,8 +245,37 @@ a:active {
 }
 
 .cinza{
-    color: #c5bfbf;
+    color: #fff;
     text-shadow: 1px 1px 1px #000;
     font-size: 30px;
+}
+
+li{
+    height: 42px;
+    width: 600px;
+    background: white;
+    margin-top: 10px;
+    margin-left: 60px;
+    padding-top: 20px;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 4px 4px 2px black;
+    list-style-position: inside;
+    font-size: 20px;
+}
+
+li a{
+    text-decoration: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    border: 2px solid #067ee0;
+    border-radius: 20px;
+    float: right;
+    margin-right: 10px;
+    margin-top: -5px;
+    font-size: 17px;
+    box-shadow: 2px 2px 2px #000;
 }
 

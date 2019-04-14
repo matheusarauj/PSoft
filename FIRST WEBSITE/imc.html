@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,39 +20,39 @@
     <![endif]-->
 
     <script>
-        function calcular(){
+        function calcular() {
             var peso = parseFloat(document.getElementById('peso').value);
             var altura = parseFloat(document.getElementById('altura').value);
 
-            if(altura < 0 || altura == null || isNaN(altura)){
+            if (altura < 0 || altura == null || isNaN(altura)) {
                 alert('Digite uma altura válida.');
                 return false;
             }
-            if(peso < 0 || peso == null || isNaN(peso)){
+            if (peso < 0 || peso == null || isNaN(peso)) {
                 alert('Digite um peso válido.');
                 return false;
             }
 
-            var resultado = peso/(altura*altura)
+            var resultado = peso / (altura * altura)
             var resposta = null;
 
-            if(resultado < 17){
+            if (resultado < 17) {
                 resposta = "IMC: " + resultado.toFixed(2) + ". Você está muito desnutrido, irmão.";
             }
-            else if(resultado >= 17 && resultado < 18.5){
-                resposta = "IMC: " +  resultado.toFixed(2) + ". Você está magrinho, consagrado.";
+            else if (resultado >= 17 && resultado < 18.5) {
+                resposta = "IMC: " + resultado.toFixed(2) + ". Você está magrinho, consagrado.";
             }
-            else if(resultado >= 18.5 && resultado < 25){
-                resposta = "IMC: " +  resultado.toFixed(2) + ". Você está no grau, excelência.";
+            else if (resultado >= 18.5 && resultado < 25) {
+                resposta = "IMC: " + resultado.toFixed(2) + ". Você está no grau, excelência.";
             }
-            else if(resultado >= 25 && resultado < 30){
-                resposta = "IMC: " +  resultado.toFixed(2) + ". Você está gordinho, parceiro.";
+            else if (resultado >= 25 && resultado < 30) {
+                resposta = "IMC: " + resultado.toFixed(2) + ". Você está gordinho, parceiro.";
             }
-            else if(resultado >= 30 && resultado < 35){
-                resposta = "IMC: " +  resultado.toFixed(2) + ". Você está um melãozinho, moral.";
+            else if (resultado >= 30 && resultado < 35) {
+                resposta = "IMC: " + resultado.toFixed(2) + ". Você está um melãozinho, moral.";
             }
-            else{
-                resposta = "IMC: " +  resultado.toFixed(2) + ". Doido, tu vai morrer!";
+            else {
+                resposta = "IMC: " + resultado.toFixed(2) + ". Doido, tu vai morrer!";
             }
 
             document.getElementById('resultado').value = resposta;
@@ -59,19 +60,20 @@
 
         }
     </script>
-  </head>
+</head>
 
-  <body id="body">
+<body id="body">
 
     <header>
-      <div id="navegacao">
-        <div class="area">
-          <h1 id="logo"><span class="purple">Grab</span>owski</h1>
-          <div id="menu">
-            <a href="index.html">Home</a>
-            <a href="imc.html">IMC</a>
-            <a href="outrasCoisas.html">Outras Coisas</a>
-          </div>
+        <div id="navegacao">
+            <div class="area">
+                <h1 id="logo"><span class="purple">Grab</span>owski</h1>
+                <div id="menu">
+                    <a href="index.html">Home</a>
+                    <a href="imc.html">IMC</a>
+                    <a href="outrasCoisas.html">Outras Coisas</a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -85,23 +87,25 @@
 
         <section class="campo-imc">
             <div>
-                <h2 class="cinza">Digite a sua altura:</h3>
-                <input id="altura" type="text" class="campo">
+                <h2 class="cinza">Digite a sua altura:</h2>
+                <input id="altura" type="text" class="campo" autofocus>
             </div>
             <div>
-                <h2 class="cinza">Digite o seu peso:</h3>
+                <h2 class="cinza">Digite o seu peso:</h2>
                 <input id="peso" type="text" class="campo">
             </div>
 
             <div>
-                <button type="button" class="button" onclick="calcular()" >Calcular</button>
+                <br />
+                <a class="button" href="#" onclick="calcular()">Calcular</a>
             </div>
 
             <div>
-                <br/>
-                <input type="text" class="resposta" value="IMC:0.00" id="resultado" readonly >
+                <br />
+                <input type="text" class="resposta" value="IMC: 0.00" id="resultado" readonly>
             </div>
         </section>
     </nav>
-  </body>
+</body>
+
 </html>
