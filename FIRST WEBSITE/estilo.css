@@ -25,9 +25,20 @@ body {
 	top: 0;
 }
 
+#rodape {
+	background: #fff;
+	border-top: 1px solid #535353;
+	height: 50px;
+	width: 100%;
+}
+
 .area {
 	width: 1300px;
 	margin: 0 auto;
+}
+
+.area-rodape {
+	margin: 0;
 }
 
 @media screen and (max-width: 1400px) {
@@ -166,6 +177,13 @@ body {
 	margin-right: -12px;
 }
 
+#menu-rodape{
+    margin-top: 10px;
+    margin-right: 0px;
+    padding-left: -5px;
+    text-align: center;
+}
+
 #descricao {
     margin-top: 50px;
     width: 720px;
@@ -277,5 +295,16 @@ li a{
     margin-top: -5px;
     font-size: 17px;
     box-shadow: 2px 2px 2px #000;
+}
+
+#icon{
+    text-decoration: none;
+    text-align: center;
+    margin-left: 5px;
+    font-weight: normal;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+    font-size: 25px;
 }
 
