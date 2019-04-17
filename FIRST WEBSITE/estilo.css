@@ -6,6 +6,13 @@
 	padding: 0;
 }
 
+html, body, .capa {
+    height: 100%;
+    width: 100%;
+	overflow: visible;
+}
+
+
 body {
 	font-size: 17px;
 	background: url('IMAGENS/grey-washed-wall.png'),
@@ -13,7 +20,6 @@ body {
 				linear-gradient(50deg,#024881,#067ee0);
 	background-attachment: fixed;
 	font-family: 'Montserrat', sans-serif;
-	overflow-x: hidden;
 }
 
 #navegacao {
@@ -26,10 +32,15 @@ body {
 }
 
 #rodape {
+    clear: both;
+    position: fixed;
 	background: #fff;
 	border-top: 1px solid #535353;
 	height: 50px;
-	width: 100%;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 .area {
@@ -143,14 +154,14 @@ body {
     color: #fff;
     font-size: 90px;
     text-shadow: 2px 2px 1px #000;  
-    letter-spacing: -5px;
+    letter-spacing: -10px;
 }
 
 .letra-media{
     color: #fff;
     font-size: 60px;
     text-shadow: 2px 2px 1px #000;  
-    letter-spacing: -2px;
+    letter-spacing: -5px;
 }
 
 .subtitulo{
@@ -163,7 +174,7 @@ body {
 
 #area-principal {
 	width: 720px;
-	margin: 155px auto 10px auto;
+	margin: 155px auto 70px auto;
 }
 
 #logo {
