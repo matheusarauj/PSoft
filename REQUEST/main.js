@@ -1,29 +1,19 @@
-class List {
-    constructor() {
-        this.data = [];
-    }
+// REST
 
-    add(data){
-        this.data.push(data);
-        console.log(this.data);
-    }
-}
+const usuario = {
+    nome: "Diego",
+    idade: 23,
+    empresa: "Rocketseat"
+};
 
-class TodoList extends List {
-    constructor(){
-        super();
+const {nome, ...resto} = usuario;
 
-        this.usuario = "Diego";
-    }
+console.log(nome);
+console.log(resto);
 
-    mostraUsuario(){
-        console.log(this.usuario);
-    }
-}
+// SPREAD
 
-const MinhaLista = new TodoList();
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
 
-document.getElementById('novotodo').onclick = function() {
-    MinhaLista.add('Novo Todo');
-    MinhaLista.mostraUsuario();
-}
+const arr3 = [ ...arr1, ...arr2];
